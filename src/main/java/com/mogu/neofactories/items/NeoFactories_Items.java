@@ -8,7 +8,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class NeoFactories_Items {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(NeoFactories.MOD_ID);
-    public static final DeferredItem<Item> TERMIUM = ITEMS.register("termium", ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TERMIUM = ITEMS.registerSimpleItem("termium");
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
